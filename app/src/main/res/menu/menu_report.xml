@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_report_search"
+        android:icon="@drawable/menusearch48"
+        android:title="Tìm kiếm"
+        app:showAsAction="always|collapseActionView"/>
+
+    <item
+        android:id="@+id/menu_report_type_groupname"
+        android:icon="@drawable/paintingpalette48"
+        android:title="Nhóm"
+        app:showAsAction="always|collapseActionView" />
+
+    <item
+        android:id="@+id/menu_report_thunho_phongto"
+        android:icon="@drawable/thu_hep_30"
+        android:title="Chi"
+        app:showAsAction="always|collapseActionView" />
+
+</menu>

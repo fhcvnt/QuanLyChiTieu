@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_constraintlayout_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundmainbord"
+    tools:context="account.Login">
+
+    <ImageView
+        android:id="@+id/login_imageView_sharingan5"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="85dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sharingan256" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/login_constraintlayout_grouppass"
+        android:layout_width="330dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/login_imageView_num0"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/aries128white" />
+
+        <ImageView
+            android:id="@+id/login_imageView_num1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toEndOf="@+id/login_imageView_num0"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/chopper128white" />
+
+        <ImageView
+            android:id="@+id/login_imageView_num2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toEndOf="@+id/login_imageView_num1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/erza128white" />
+
+        <ImageView
+            android:id="@+id/login_imageView_num3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toEndOf="@+id/login_imageView_num2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/fujio128white" />
+
+        <ImageView
+            android:id="@+id/login_imageView_num4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toEndOf="@+id/login_imageView_num3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/gon128white" />
+
+        <ImageView
+            android:id="@+id/login_imageView_num5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toEndOf="@+id/login_imageView_num4"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/inuyasha128white" />
+
+        <ImageView
+            android:id="@+id/login_imageView_num6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="36dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login_imageView_num0"
+            app:srcCompat="@drawable/kiriko128white" />
+
+        <ImageView
+            android:id="@+id/login_imageView_num7"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="2dp"
+            app:layout_constraintStart_toEndOf="@+id/login_imageView_num6"
+            app:layout_constraintTop_toBottomOf="@+id/login_imageView_num1"
+            app:srcCompat="@drawable/lucy128white" />
+
+        <ImageView
+            android:id="@+id/login_imageView_num8"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="2dp"
+            app:layout_constraintStart_toEndOf="@+id/login_imageView_num7"
+            app:layout_constraintTop_toBottomOf="@+id/login_imageView_num3"
+            app:srcCompat="@drawable/luffy128white" />
+
+        <ImageView
+            android:id="@+id/login_imageView_num9"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="2dp"
+            app:layout_constraintStart_toEndOf="@+id/login_imageView_num8"
+            app:layout_constraintTop_toBottomOf="@+id/login_imageView_num3"
+            app:srcCompat="@drawable/mirajane128white" />
+
+        <ImageView
+            android:id="@+id/login_imageView_num10"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="2dp"
+            app:layout_constraintStart_toEndOf="@+id/login_imageView_num9"
+            app:layout_constraintTop_toBottomOf="@+id/login_imageView_num5"
+            app:srcCompat="@drawable/natsu128white" />
+
+        <ImageView
+            android:id="@+id/login_imageView_num11"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="62dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login_imageView_num6"
+            app:srcCompat="@drawable/orihime128white" />
+
+        <ImageView
+            android:id="@+id/login_imageView_num12"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="2dp"
+            app:layout_constraintStart_toEndOf="@+id/login_imageView_num11"
+            app:layout_constraintTop_toBottomOf="@+id/login_imageView_num7"
+            app:srcCompat="@drawable/saitama128white" />
+
+        <ImageView
+            android:id="@+id/login_imageView_num13"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="2dp"
+            app:layout_constraintStart_toEndOf="@+id/login_imageView_num12"
+            app:layout_constraintTop_toBottomOf="@+id/login_imageView_num8"
+            app:srcCompat="@drawable/songoku128white" />
+
+        <ImageView
+            android:id="@+id/login_imageView_num14"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="2dp"
+            app:layout_constraintStart_toEndOf="@+id/login_imageView_num13"
+            app:layout_constraintTop_toBottomOf="@+id/login_imageView_num9"
+            app:srcCompat="@drawable/yukino128white" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/login_textView_password"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="***"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/login_constraintlayout_grouppass"
+        app:layout_constraintEnd_toStartOf="@+id/login_imageView_backspace"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/login_imageView_backspace"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/login_constraintlayout_grouppass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/backspace64" />
+
+    <ImageView
+        android:id="@+id/login_imageView_login"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_constraintlayout_grouppass"
+        app:srcCompat="@drawable/login64" />
+
+    <ImageView
+        android:id="@+id/login_imageView_hinhdaidien"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/login_textView_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.561"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/tamac512" />
+
+    <ImageView
+        android:id="@+id/login_imageView_sharingan1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sharingan128madara" />
+
+    <ImageView
+        android:id="@+id/login_imageView_sharingan2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sharingan128kakashi" />
+
+    <ImageView
+        android:id="@+id/login_imageView_sharingan3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/sharingan128sasuke" />
+
+    <ImageView
+        android:id="@+id/login_imageView_sharingan4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/sharingan128shishui" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="5dp"
+        android:alpha="0.4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/naruto256" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="5dp"
+        android:alpha="0.4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:srcCompat="@drawable/kyubi256" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/report_constraintLayout_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="report.Report">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/report_constraintLayout_hide_show"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="#0277BD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/report_textView_tongthu"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left|center_vertical"
+            android:text="- Tổng thu:"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/report_textView_tongthu2"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left|center_vertical"
+            android:text=" 0 đ"
+            android:textColor="#323232"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/report_textView_tongthu"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/report_textView_tongchi"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left|center_vertical"
+            android:text="- Tổng chi:"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/report_textView_tongthu" />
+
+        <TextView
+            android:id="@+id/report_textView_tongchi2"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left|center_vertical"
+            android:text="0 đ"
+            android:textColor="#323232"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/report_textView_tongchi"
+            app:layout_constraintTop_toBottomOf="@+id/report_textView_tongthu" />
+
+        <TextView
+            android:id="@+id/report_textView_sodu"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left|center_vertical"
+            android:text="=> Số dư:"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/report_textView_tongchi" />
+
+        <TextView
+            android:id="@+id/report_textView_sodu2"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left|center_vertical"
+            android:text=" 0 đ"
+            android:textColor="#323232"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/report_textView_sodu"
+            app:layout_constraintTop_toBottomOf="@+id/report_textView_tongchi" />
+
+        <ImageView
+            android:id="@+id/report_imageView_morong_thunho"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/thu_hep_30" />
+
+        <TextView
+            android:id="@+id/report_textView_dangchomuon"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left|center_vertical"
+            android:text="- Đang cho mượn:"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/report_textView_sodu" />
+
+        <TextView
+            android:id="@+id/report_textView_dangchomuon2"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left|center_vertical"
+            android:text="0 đ"
+            android:textColor="#323232"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/report_textView_dangchomuon"
+            app:layout_constraintTop_toBottomOf="@+id/report_textView_sodu" />
+
+        <TextView
+            android:id="@+id/report_textView_tongchomuon"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left|center_vertical"
+            android:text="Tổng cho mượn:"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/report_textView_dangchomuon" />
+
+        <TextView
+            android:id="@+id/report_textView_tongchomuon2"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left|center_vertical"
+            android:text="0 đ"
+            android:textColor="#323232"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/report_textView_tongchomuon"
+            app:layout_constraintTop_toBottomOf="@+id/report_textView_dangchomuon" />
+
+        <TextView
+            android:id="@+id/report_textView_chomuon_datra"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left|center_vertical"
+            android:text="Đã trả:"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/report_textView_tongchomuon" />
+
+        <TextView
+            android:id="@+id/report_textView_chomuon_datra2"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left|center_vertical"
+            android:text="0 đ"
+            android:textColor="#323232"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/report_textView_chomuon_datra"
+            app:layout_constraintTop_toBottomOf="@+id/report_textView_tongchomuon" />
+
+        <TextView
+            android:id="@+id/report_textView_conno"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left|center_vertical"
+            android:text="- Còn nợ:"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/report_textView_chomuon_datra" />
+
+        <TextView
+            android:id="@+id/report_textView_conno2"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left|center_vertical"
+            android:text="0 đ"
+            android:textColor="#323232"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/report_textView_conno"
+            app:layout_constraintTop_toBottomOf="@+id/report_textView_chomuon_datra" />
+
+        <TextView
+            android:id="@+id/report_textView_tongno"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left|center_vertical"
+            android:text="Tổng nợ:"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/report_textView_conno" />
+
+        <TextView
+            android:id="@+id/report_textView_tongno2"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left|center_vertical"
+            android:text="0 đ"
+            android:textColor="#323232"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/report_textView_tongno"
+            app:layout_constraintTop_toBottomOf="@+id/report_textView_conno" />
+
+        <TextView
+            android:id="@+id/report_textView_no_datra"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left|center_vertical"
+            android:text="Đã trả:"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/report_textView_tongno" />
+
+        <TextView
+            android:id="@+id/report_textView_no_datra2"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left|center_vertical"
+            android:text=" 0 đ"
+            android:textColor="#323232"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/report_textView_no_datra"
+            app:layout_constraintTop_toBottomOf="@+id/report_textView_tongno" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ListView
+        android:id="@+id/report_listview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/report_constraintlayout_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/report_constraintLayout_hide_show" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/report_constraintlayout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#113863"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/report_textView_ghichu"
+            android:layout_width="65dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="28dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Ghi chú"
+            android:textColor="#ADB0B0"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/report_textView_nhom"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/report_textView_nhom"
+            android:layout_width="65dp"
+            android:layout_height="19dp"
+            android:layout_marginTop="28dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Nhóm"
+            android:textColor="#ADB0B0"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/report_textView_baocao"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/report_textView_ghichu"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/report_textView_baocao"
+            android:layout_width="65dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="28dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Báo cáo"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/report_textView_taikhoan"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/report_textView_nhom"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/report_textView_taikhoan"
+            android:layout_width="65dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="28dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Tài khoản"
+            android:textColor="#ADB0B0"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/report_textView_baocao"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/report_imageView_ghichu"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/report_textView_ghichu"
+            app:layout_constraintEnd_toStartOf="@+id/report_imageView_nhom"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/note_gray_24" />
+
+        <ImageView
+            android:id="@+id/report_imageView_nhom"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/report_textView_nhom"
+            app:layout_constraintEnd_toStartOf="@+id/report_imageView_baocao"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/report_imageView_ghichu"
+            app:srcCompat="@drawable/group_gray_24" />
+
+        <ImageView
+            android:id="@+id/report_imageView_baocao"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/report_textView_baocao"
+            app:layout_constraintEnd_toStartOf="@+id/report_imageView_taikhoan"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/report_imageView_nhom"
+            app:srcCompat="@drawable/report_white_24" />
+
+        <ImageView
+            android:id="@+id/report_imageView_taikhoan"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/report_textView_taikhoan"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/report_imageView_baocao"
+            app:srcCompat="@drawable/accounts_gray_24" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

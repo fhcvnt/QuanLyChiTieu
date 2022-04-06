@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/listview_item_report_textView_tieude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Hôm nay (13/03/2022)"
+        android:textColor="#283593"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/listview_item_report_imageView_thu"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listview_item_report_textView_tieude"
+        app:srcCompat="@drawable/thu48" />
+
+    <TextView
+        android:id="@+id/listview_item_report_textView_thu"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:gravity="left|center_vertical"
+        android:text="Thu:"
+        android:textColor="#505050"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/listview_item_report_imageView_thu"
+        app:layout_constraintTop_toBottomOf="@+id/listview_item_report_textView_tieude" />
+
+    <TextView
+        android:id="@+id/listview_item_report_textView_thu2"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="left|center_vertical"
+        android:text="0 đ"
+        android:textColor="#505050"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/listview_item_report_textView_thu"
+        app:layout_constraintTop_toBottomOf="@+id/listview_item_report_textView_tieude" />
+
+    <ImageView
+        android:id="@+id/listview_item_report_imageView_chi"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listview_item_report_imageView_thu"
+        app:srcCompat="@drawable/chi48" />
+
+    <TextView
+        android:id="@+id/listview_item_report_textView_chi"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="left|center_vertical"
+        android:text="Chi:"
+        android:textColor="#505050"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/listview_item_report_imageView_chi"
+        app:layout_constraintTop_toBottomOf="@+id/listview_item_report_textView_thu" />
+
+    <TextView
+        android:id="@+id/listview_item_report_textView_chi2"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="left|center_vertical"
+        android:text="0 đ"
+        android:textColor="#505050"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/listview_item_report_textView_chi"
+        app:layout_constraintTop_toBottomOf="@+id/listview_item_report_textView_thu2" />
+
+    <ImageView
+        android:id="@+id/listview_item_report_imageView_chomuon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listview_item_report_imageView_chi"
+        app:srcCompat="@drawable/chomuon48" />
+
+    <TextView
+        android:id="@+id/listview_item_report_textView_chomuon"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="left|center_vertical"
+        android:text="Cho mượn:"
+        android:textColor="#505050"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/listview_item_report_imageView_chomuon"
+        app:layout_constraintTop_toBottomOf="@+id/listview_item_report_textView_chi" />
+
+    <TextView
+        android:id="@+id/listview_item_report_textView_chomuon2"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="left|center_vertical"
+        android:text="0 đ"
+        android:textColor="#505050"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/listview_item_report_textView_chomuon"
+        app:layout_constraintTop_toBottomOf="@+id/listview_item_report_textView_chi2" />
+
+    <ImageView
+        android:id="@+id/listview_item_report_imageView_no"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listview_item_report_imageView_chomuon"
+        app:srcCompat="@drawable/no48" />
+
+    <TextView
+        android:id="@+id/listview_item_report_textView_no"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="left|center_vertical"
+        android:text="Nợ:"
+        android:textColor="#505050"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/listview_item_report_imageView_no"
+        app:layout_constraintTop_toBottomOf="@+id/listview_item_report_textView_chomuon" />
+
+    <TextView
+        android:id="@+id/listview_item_report_textView_no2"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="left|center_vertical"
+        android:text="0 đ"
+        android:textColor="#505050"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/listview_item_report_textView_no"
+        app:layout_constraintTop_toBottomOf="@+id/listview_item_report_textView_chomuon2" />
+
+    <TextView
+        android:id="@+id/listview_item_report_textView_line"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="5dp"
+        android:text="------------------------------------------------"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listview_item_report_textView_no2" />
+
+    <TextView
+        android:id="@+id/listview_item_report_textView_danhsach"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:text="Danh sách nhóm"
+        android:textColor="#D84315"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listview_item_report_textView_line" />
+
+    <TextView
+        android:id="@+id/listview_item_report_textView_phancach"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="#B9B9BA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listview_item_report_textView_danhsach" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

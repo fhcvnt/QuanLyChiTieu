@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_grouplist_thu"
+        android:icon="@drawable/thu48select"
+        android:title="Thu"
+        app:showAsAction="always|collapseActionView" />
+
+    <item
+        android:id="@+id/menu_grouplist_chi"
+        android:icon="@drawable/chi48"
+        android:title="Chi"
+        app:showAsAction="always|collapseActionView" />
+
+    <item
+        android:id="@+id/menu_grouplist_chomuon"
+        android:icon="@drawable/chomuon48"
+        android:title="Cho mượn"
+        app:showAsAction="always|collapseActionView" />
+
+    <item
+        android:id="@+id/menu_grouplist_no"
+        android:icon="@drawable/no48"
+        android:title="Nợ"
+        app:showAsAction="always|collapseActionView" />
+</menu>

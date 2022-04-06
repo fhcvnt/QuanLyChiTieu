@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/notesearch_contraintlayout_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0277BD"
+    tools:context="note.NoteSearch">
+
+    <ImageView
+        android:id="@+id/notesearch_imageView_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow_back_48" />
+
+    <TextView
+        android:id="@+id/notesearch_textView_loai"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:gravity="right|center_vertical"
+        android:text="Loại:"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/notesearch_imageView_back"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/notesearch_spinner_loai"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/notesearch_textView_loai"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/notesearch_textView_nhom"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:gravity="right|center_vertical"
+        android:text="Nhóm:"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/notesearch_imageView_back"
+        app:layout_constraintTop_toBottomOf="@+id/notesearch_textView_loai" />
+
+    <Spinner
+        android:id="@+id/notesearch_spinner_nhom"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/notesearch_textView_nhom"
+        app:layout_constraintTop_toBottomOf="@+id/notesearch_spinner_loai" />
+
+    <Button
+        android:id="@+id/notesearch_button_timkiem"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="#C62828"
+        android:text="Tìm kiếm"
+        app:icon="@drawable/search_30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notesearch_spinner_nhom" />
+
+    <TextView
+        android:id="@+id/notesearch_textView_morong_thunho"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="left|center_vertical"
+        android:text="Thu nhỏ"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notesearch_textView_nhom" />
+
+    <ImageView
+        android:id="@+id/notesearch_imageView_morong_thunho"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/notesearch_textView_morong_thunho"
+        app:layout_constraintTop_toBottomOf="@+id/notesearch_textView_nhom"
+        app:srcCompat="@drawable/thu_hep_30" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/notesearch_contraintlayout_hide_show"
+        android:layout_width="0dp"
+        android:layout_height="325dp"
+        android:layout_marginTop="4dp"
+        android:background="#A0A0A0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notesearch_button_timkiem">
+
+        <TextView
+            android:id="@+id/notesearch_textView_ghichu"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:gravity="right|center_vertical"
+            android:text="Ghi chú:"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/notesearch_editText_ghichu"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/border_notesearch"
+            android:ems="10"
+            android:gravity="left|center_vertical"
+            android:hint="Ghi chú"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/notesearch_textView_ghichu"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/notesearch_textView_sotientoithieu"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="right|center_vertical"
+            android:text="Số tiền tối thiểu:"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/notesearch_textView_ghichu" />
+
+        <EditText
+            android:id="@+id/notesearch_editText_sotientoithieu"
+            android:layout_width="0dp"
+            android:layout_height="30sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/border_notesearch"
+            android:ems="10"
+            android:gravity="left|center_vertical"
+            android:hint="Số tiền"
+            android:inputType="number"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/notesearch_textView_sotientoithieu"
+            app:layout_constraintTop_toBottomOf="@+id/notesearch_editText_ghichu" />
+
+        <TextView
+            android:id="@+id/notesearch_textView_tungay"
+            android:layout_width="80dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="right|center_vertical"
+            android:text="Từ ngày:"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/notesearch_textView_sotientoithieu" />
+
+        <Button
+            android:id="@+id/notesearch_button_tungay"
+            android:layout_width="150dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#6E6E6E"
+            android:text="Chọn ngày"
+            app:layout_constraintStart_toEndOf="@+id/notesearch_textView_tungay"
+            app:layout_constraintTop_toBottomOf="@+id/notesearch_editText_sotientoithieu" />
+
+        <TextView
+            android:id="@+id/notesearch_textView_denngay"
+            android:layout_width="80dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="right|center_vertical"
+            android:text="Đến ngày:"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/notesearch_textView_tungay" />
+
+        <Button
+            android:id="@+id/notesearch_button_denngay"
+            android:layout_width="150dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#6E6E6E"
+            android:text="Chọn ngày"
+            app:layout_constraintStart_toEndOf="@+id/notesearch_textView_denngay"
+            app:layout_constraintTop_toBottomOf="@+id/notesearch_button_tungay" />
+
+        <TextView
+            android:id="@+id/notesearch_textView_ketquatimkiem"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="right|center_vertical"
+            android:text="Kết quả tìm kiếm:"
+            android:textColor="#C62828"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/notesearch_textView_denngay" />
+
+        <TextView
+            android:id="@+id/notesearch_textView_ketquatimkiem2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="right|center_vertical"
+            android:textColor="#5A5A5A"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/notesearch_textView_ketquatimkiem"
+            app:layout_constraintTop_toBottomOf="@+id/notesearch_textView_denngay" />
+
+        <TextView
+            android:id="@+id/notesearch_textView_tongthu"
+            android:layout_width="wrap_content"
+            android:layout_height="26sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left|center_vertical"
+            android:text="Tổng thu:"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/notesearch_textView_ketquatimkiem" />
+
+        <TextView
+            android:id="@+id/notesearch_textView_tongthu2"
+            android:layout_width="wrap_content"
+            android:layout_height="26sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left|center_vertical"
+            android:text="0 đ"
+            android:textColor="#5A5A5A"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@+id/notesearch_textView_tongthu"
+            app:layout_constraintTop_toBottomOf="@+id/notesearch_textView_ketquatimkiem" />
+
+        <TextView
+            android:id="@+id/notesearch_textView_tongchi"
+            android:layout_width="wrap_content"
+            android:layout_height="26sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left|center_vertical"
+            android:text="Tổng chi:"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/notesearch_textView_tongthu" />
+
+        <TextView
+            android:id="@+id/notesearch_textView_tongchi2"
+            android:layout_width="wrap_content"
+            android:layout_height="26sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left|center_vertical"
+            android:text="0 đ"
+            android:textColor="#5A5A5A"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@+id/notesearch_textView_tongchi"
+            app:layout_constraintTop_toBottomOf="@+id/notesearch_textView_tongthu" />
+
+        <TextView
+            android:id="@+id/notesearch_textView_tongchomuon"
+            android:layout_width="wrap_content"
+            android:layout_height="26sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left|center_vertical"
+            android:text="Tổng cho mượn:"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/notesearch_textView_tongchi" />
+
+        <TextView
+            android:id="@+id/notesearch_textView_tongchomuon2"
+            android:layout_width="wrap_content"
+            android:layout_height="26sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left|center_vertical"
+            android:text="0 đ"
+            android:textColor="#5A5A5A"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@+id/notesearch_textView_tongchomuon"
+            app:layout_constraintTop_toBottomOf="@+id/notesearch_textView_tongchi" />
+
+        <TextView
+            android:id="@+id/notesearch_textView_tongno"
+            android:layout_width="wrap_content"
+            android:layout_height="26sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left|center_vertical"
+            android:text="Tổng nợ:"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/notesearch_textView_tongchomuon" />
+
+        <TextView
+            android:id="@+id/notesearch_textView_tongno2"
+            android:layout_width="wrap_content"
+            android:layout_height="26sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left|center_vertical"
+            android:text="0 đ"
+            android:textColor="#5A5A5A"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@+id/notesearch_textView_tongno"
+            app:layout_constraintTop_toBottomOf="@+id/notesearch_textView_tongchomuon" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/notesearch_contraintlayout_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:background="#F0F0F0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notesearch_contraintlayout_hide_show">
+
+        <ListView
+            android:id="@+id/notesearch_listview_notelist"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="group.GroupList">
+
+    <ListView
+        android:id="@+id/grouplist_listview_danhsachnhom"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/grouplist_constraintlayout_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ListView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/grouplist_floatingActionButton_tao"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:foregroundGravity="center"
+        android:foreground="@drawable/add_24"
+        app:backgroundTint="#1D61C3"
+        app:layout_constraintBottom_toBottomOf="@+id/grouplist_listview_danhsachnhom"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/grouplist_constraintlayout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#113863"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/grouplist_textView_ghichu"
+            android:layout_width="65dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="28dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Ghi chú"
+            android:textColor="#ADB0B0"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/grouplist_textView_nhom"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/grouplist_textView_nhom"
+            android:layout_width="65dp"
+            android:layout_height="19dp"
+            android:layout_marginTop="28dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Nhóm"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/grouplist_textView_baocao"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/grouplist_textView_ghichu"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/grouplist_textView_baocao"
+            android:layout_width="65dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="28dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Báo cáo"
+            android:textColor="#ADB0B0"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/grouplist_textView_taikhoan"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/grouplist_textView_nhom"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/grouplist_textView_taikhoan"
+            android:layout_width="65dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="28dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Tài khoản"
+            android:textColor="#ADB0B0"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/grouplist_textView_baocao"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/grouplist_imageView_ghichu"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/grouplist_textView_ghichu"
+            app:layout_constraintEnd_toStartOf="@+id/grouplist_imageView_nhom"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/note_gray_24" />
+
+        <ImageView
+            android:id="@+id/grouplist_imageView_nhom"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/grouplist_textView_nhom"
+            app:layout_constraintEnd_toStartOf="@+id/grouplist_imageView_baocao"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/grouplist_imageView_ghichu"
+            app:srcCompat="@drawable/group_white_24" />
+
+        <ImageView
+            android:id="@+id/grouplist_imageView_baocao"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/grouplist_textView_baocao"
+            app:layout_constraintEnd_toStartOf="@+id/grouplist_imageView_taikhoan"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/grouplist_imageView_nhom"
+            app:srcCompat="@drawable/report_gray_24" />
+
+        <ImageView
+            android:id="@+id/grouplist_imageView_taikhoan"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/grouplist_textView_taikhoan"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/grouplist_imageView_baocao"
+            app:srcCompat="@drawable/accounts_gray_24" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuitem_backupandrestore_restore"
+        android:icon="@android:drawable/ic_popup_sync"
+        android:title="Khôi phục"
+        app:showAsAction="always|collapseActionView" />
+
+    <item
+        android:id="@+id/menuitem_backupandrestore_listfolder"
+        android:icon="?attr/actionModeCopyDrawable"
+        android:title="Thư mục"
+        app:showAsAction="always|collapseActionView" />
+
+    <item
+        android:id="@+id/menuitem_backupandrestore_delete"
+        android:icon="@drawable/delete48"
+        android:title="Xóa"
+        app:showAsAction="always|collapseActionView" />
+
+</menu>

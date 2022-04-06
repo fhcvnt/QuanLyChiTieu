@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "552623207864",
+    "project_id": "quanlychitieu032022",
+    "storage_bucket": "quanlychitieu032022.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552623207864:android:e37c5a6e6d932efe204b4d",
+        "android_client_info": {
+          "package_name": "naruto.hinata.quanlychitieu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "552623207864-28gr850eitgqdbp8g5k93u15ufd7cm0n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNyFcxSGHOXg1-7Lq_30BITsSXVAwB0S8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "552623207864-28gr850eitgqdbp8g5k93u15ufd7cm0n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

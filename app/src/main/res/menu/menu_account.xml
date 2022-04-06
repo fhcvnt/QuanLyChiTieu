@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_account_dangnhap_timkiem"
+        android:title="Đăng nhập"
+        app:showAsAction="always|collapseActionView" />
+
+    <item
+        android:id="@+id/menu_account_dangxuat_dangky"
+        android:title="Đăng ký"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_account_caidat"
+        android:title="Cài đặt"
+        app:showAsAction="never" />
+</menu>

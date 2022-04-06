@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:id="@+id/account_dialog_setting_radioGroup"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/account_dialog_setting_radioButton_ngay"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Ngày"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/account_dialog_setting_radioButton_thang"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Tháng" />
+
+        <RadioButton
+            android:id="@+id/account_dialog_setting_radioButton_nam"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Năm" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/account_dialog_setting_editText_ngay"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border_notesearch"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:text="30"
+        app:layout_constraintStart_toEndOf="@+id/account_dialog_setting_radioGroup"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/account_dialog_setting_editText_thang"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="2dp"
+        android:background="@drawable/border_notesearch"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:text="12"
+        app:layout_constraintStart_toEndOf="@+id/account_dialog_setting_radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/account_dialog_setting_editText_ngay" />
+
+    <EditText
+        android:id="@+id/account_dialog_setting_editText_nam"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="2dp"
+        android:background="@drawable/border_notesearch"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:text="1"
+        app:layout_constraintStart_toEndOf="@+id/account_dialog_setting_radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/account_dialog_setting_editText_thang" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

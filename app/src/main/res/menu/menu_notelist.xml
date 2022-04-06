@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_notelist_search"
+        android:icon="@drawable/menusearch48"
+        android:title="Tìm kiếm"
+        app:showAsAction="always|collapseActionView"/>
+
+    <item
+        android:id="@+id/menu_notelist_grouplist"
+        android:icon="@drawable/menucatalog48"
+        android:title="Nhóm"
+        app:showAsAction="always|collapseActionView"/>
+
+    <item
+        android:id="@+id/menu_notelist_thu"
+        android:icon="@drawable/thu48"
+        android:title="Thu"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_notelist_chi"
+        android:icon="@drawable/chi48"
+        android:title="Chi"
+        app:showAsAction="always|collapseActionView" />
+
+    <item
+        android:id="@+id/menu_notelist_chomuon"
+        android:icon="@drawable/chomuon48"
+        android:title="Cho mượn"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_notelist_no"
+        android:icon="@drawable/no48"
+        android:title="Nợ"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/report_dialog_textView_loai"
+        android:layout_width="56dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="left|center_vertical"
+        android:text="Loại:"
+        android:textColor="#323232"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/report_dialog_spinner_loai"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/report_dialog_textView_loai"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/report_dialog_textView_nhom"
+        android:layout_width="56dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="left|center_vertical"
+        android:text="Nhóm:"
+        android:textColor="#323232"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/report_dialog_textView_loai" />
+
+    <Spinner
+        android:id="@+id/report_dialog_spinner_nhom"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/report_dialog_textView_nhom"
+        app:layout_constraintTop_toBottomOf="@+id/report_dialog_spinner_loai" />
+
+    <TextView
+        android:id="@+id/report_dialog_textView_ngaybatdau"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="left|center_vertical"
+        android:text="Ngày bắt đầu:"
+        android:textColor="#283593"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/report_dialog_textView_nhom" />
+
+    <TextView
+        android:id="@+id/report_dialog_textView_ngaybatdau2"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:background="#787878"
+        android:gravity="center"
+        android:text="Chọn ngày"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/report_dialog_textView_ngaybatdau"
+        app:layout_constraintTop_toBottomOf="@+id/report_dialog_spinner_nhom" />
+
+    <TextView
+        android:id="@+id/report_dialog_textView_ngayketthuc"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="left|center_vertical"
+        android:text="Ngày kết thúc:"
+        android:textColor="#283593"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/report_dialog_textView_ngaybatdau" />
+
+    <TextView
+        android:id="@+id/report_dialog_textView_ngayketthuc2"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#787878"
+        android:gravity="center"
+        android:text="Chọn ngày"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/report_dialog_textView_ngayketthuc"
+        app:layout_constraintTop_toBottomOf="@+id/report_dialog_textView_ngaybatdau2" />
+
+    <Button
+        android:id="@+id/report_dialog_button_xacnhan"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#C62828"
+        android:text="Xác nhận"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/report_dialog_textView_ngayketthuc2"
+        app:layout_constraintTop_toBottomOf="@+id/report_dialog_textView_ngayketthuc2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

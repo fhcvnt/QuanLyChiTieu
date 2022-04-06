@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/listview_item_notelist_imageView_groupname"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        app:srcCompat="@drawable/riddler128" />
+
+    <TextView
+        android:id="@+id/listview_item_notelist_textView_groupname"
+        android:layout_width="120dp"
+        android:layout_height="16dp"
+        android:layout_below="@+id/listview_item_notelist_imageView_groupname"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="0dp"
+        android:gravity="left|center_vertical"
+        android:text="group name"
+        android:textColor="#D84315"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/listview_item_notelist_imageView_clock"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_below="@+id/listview_item_notelist_imageView_groupname"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/listview_item_notelist_textView_groupname"
+        app:srcCompat="@drawable/clock_16" />
+
+    <TextView
+        android:id="@+id/listview_item_notelist_textView_datetime"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_below="@+id/listview_item_notelist_imageView_groupname"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toEndOf="@+id/listview_item_notelist_imageView_clock"
+        android:gravity="left|center_vertical"
+        android:text="datetime"
+        android:textColor="#323232"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/listview_item_notelist_textView_money"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_alignBottom="@+id/listview_item_notelist_imageView_groupname"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="right|center_vertical"
+        android:text="money"
+        android:textColor="#113863"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/listview_item_notelist_textView_note"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:layout_above="@+id/listview_item_notelist_textView_money"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toEndOf="@+id/listview_item_notelist_imageView_groupname"
+        android:text="note"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/listview_item_notelist_imageView_dau3cham"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="10dp"
+        app:srcCompat="@drawable/dau3cham24" />
+
+    <TextView
+        android:id="@+id/listview_item_notelist_textView_countday"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/listview_item_notelist_imageView_clock"
+        android:gravity="left|center_vertical"
+        android:text="count day"
+        android:textColor="#323232"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/listview_item_notelist_textView_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/listview_item_notelist_textView_datetime"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="2dp"
+        android:background="#828282" />
+
+</RelativeLayout>
